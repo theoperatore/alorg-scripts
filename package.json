@@ -1,0 +1,12 @@
+{
+  "name": "alorg-scripts",
+  "version": "0.1.0",
+  "description": "Deployment scripts for use with SPA",
+  "main": "index.js",
+  "author": "Alex Petersen <theoperatore@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "commander": "^2.9.0"
+  }
+}
