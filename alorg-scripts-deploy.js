@@ -164,7 +164,7 @@ async function doIt(cfg) {
 
   // [4/6] build nginx image
   console.log(chalk.grey(`[4/${stepMax}]`), '📦 ', 'Building nginx image', chalk.magenta(`${cfg.registry}:${cfg.tag}`));
-	await run(['docker', 'build', '-t', `${cfg.registry}:${cfg.tag}`, '-f', path.resolve(__dirname, './docker/Dockerfile-nginx'), path.resolve(__dirname, './')]);
+  await run(['docker', 'build', '-t', `${cfg.registry}:${cfg.tag}`, '-f', path.resolve(__dirname, './docker/Dockerfile-nginx'), path.resolve(__dirname, './')]);
 
   // [5/6] docker push nginx image
   console.log(chalk.grey(`[5/${stepMax}]`), '☁️ ', 'Pushing to registry', chalk.magenta(`${cfg.registry}:${cfg.tag}`));
