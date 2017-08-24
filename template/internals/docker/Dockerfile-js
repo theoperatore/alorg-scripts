@@ -1,0 +1,15 @@
+FROM node:8.2
+
+RUN ["mkdir", "-p", "/app"]
+WORKDIR /app
+
+# uncomment if you need to specify different configuration
+# COPY ./.npmrc /app
+COPY ./package.json /app
+COPY ./yarn.lock /app
+
+RUN ["yarn", "--frozen-lockfile"]
+
+# copy code for building and testing
+COPY ./src/. /app/src/.
+COPY ./public/. /app/public/.

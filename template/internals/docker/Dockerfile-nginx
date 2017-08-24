@@ -2,8 +2,8 @@ FROM nginx:1.11
 
 RUN ["mkdir", "-p", "/srv/www", "/etc/nginx/sites-enabled"]
 
-COPY ./nginx/nginx.conf /etc/nginx
-COPY ./nginx/sites-available/ /etc/nginx/sites-available
+COPY ./internals/nginx/nginx.conf /etc/nginx
+COPY ./internals/nginx/sites-available/ /etc/nginx/sites-available
 COPY ./build/. /srv/www/.
 
 # link in our site config

@@ -1,17 +1,12 @@
 # alorg-scripts
 
-Examples of how we could deploy single-page applications via cli tool.
+CLI tool to help with deploying an Alorg project to servers running docker.
 
-Invoked exactly the same as [react-scripts]():
 
 ```bash
 # run via: yarn deploy
 alorg-scripts deploy
 ```
-
-yields:
-
-![output img](terminal.png)
 
 # Configuration
 
@@ -25,8 +20,6 @@ Right now it's based off of an `alorg.json` file:
   "servers": ["root@someplace.com"]
 }
 ```
-
-But this could just as easily be a `service.yaml` file or something else Spotify related.
 
 # License
 
