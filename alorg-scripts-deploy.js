@@ -85,6 +85,7 @@ async function doIt() {
   await run([
     'node',
     'internals/deploy.js',
+    commander.quiet ? '-q' : '',
     '-c',
     configPath,
   ], { cwd: path.resolve(__dirname, './staging' )});

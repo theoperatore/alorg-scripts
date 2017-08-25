@@ -1,0 +1,8 @@
+{
+  "name": "my-project",
+  "registry": "theoperatore/alorg",
+  "tag": "my-project",
+  "servers": [
+    "root@my-project.alorg.net"
+  ]
+}

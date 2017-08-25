@@ -8,5 +8,5 @@ const pkgJson = require('./package.json');
 commander
   .version(pkgJson.version)
   .command('deploy', 'packages and deploys current directory to specified registry and servers')
-  .command('eject', 'handle deployment yourself! [Use at your own risk]')
+  .command('bootstrap', 'handle deployment yourself! [Use at your own risk]')
   .parse(process.argv);
